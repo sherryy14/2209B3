@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="getlocation()">Get Location</button>
+    <div id="lat"></div>
+    <div id="long"></div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m22!1m8!1m3!1d452.2674789182507!2d67.03285779918313!3d24.927305931141895!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d24.928848799999997!2d67.034556!4m5!1s0x3eb33f90157042d3%3A0x93d609e8bec9a880!2saptech%20north%20nazimabad%20latitude%20and%20longitude!3m2!1d24.927318999999997!2d67.033047!5e0!3m2!1sen!2s!4v1671774497818!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    
+    <script>
+        if(window.navigator.geolocation){
+            console.log("Supported")
+        }else{
+            console.log("Not Supported")
+        }
+
+        function getlocation(){
+            if(navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition)
+            }else{
+                alert("Not Supported")
+            }
+        }
+
+        function showPosition(position){
+             document.getElementById('lat').innerText =  position.coords.latitude
+             document.getElementById('long').innerText =  position.coords.longitude
+            // alert("Latitude: "+ position.coords.latitude+ '\n'+"Longitude: "+position.coords.longitude)
+        }
+    </script>
+</body>
+</html>

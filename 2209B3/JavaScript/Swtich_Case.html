@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 4;
+        switch(a){
+            case 1:
+                document.write("First Condition")
+                break;
+            case 2:
+                document.write("2nd Condition")
+                break;
+            case 3:
+                document.write("3rd Condition")
+                break;
+            case 4:
+                document.write("4th Condition")
+                break;
+                default:
+                    document.write("Incorrect Number")
+        }
+        document.write("<br>")
+
+        var age = 19;
+        switch(true){
+            case (age >= 18 ):
+                document.write("Driving is allowed");
+                break;
+            case (age<=60):
+                document.write("Driving is allowed");
+                break;
+                default:
+                    document.write("Driving is not allowed");
+        }
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        document.write("<br>")
+        var stdID = parseInt(prompt("Enter your student ID"));
+        switch(stdID){
+            case 1:
+                document.write("Student Name: Ali <br> Batch Code: 2209B3<br>")
+                var  maths= parseInt(prompt("Marks"))
+                var  phy= parseInt(prompt("Marks"))
+                var  chem= parseInt(prompt("Marks"))
+                var  comp= parseInt(prompt("Marks"))
+                var  eng= parseInt(prompt("Marks"))
+                var marks = maths + phy+ chem + comp + eng;
+                var perc = marks /550 *100;
+                document.write("Obtained Marks:"+ marks +"<br>Percentage: "+perc+" %<br>")
+                if(perc<=100 && perc>=90){
+                    document.write("Your Grade: A+")
+                }else if(perc>=80 && perc<90){
+                    document.write("Your Grade: A")
+                }else if(perc>=70 && perc<80){
+                    document.write("Your Grade: B")
+                }else if(perc>=60 && perc<70){
+                    document.write("Your Grade: C")
+                }else if(perc>=50 && perc<60){
+                    document.write("Your Grade: D")
+                }else{
+                    document.write("You are failed to pass your exam")
+                }
+                break;
+            case 2:
+                document.write("Student Name: Kashan <br> Batch Code: 2208B3<br>")
+                var marks = 360;
+                var perc = marks /550 *100;
+                document.write("Obtained Marks:"+ marks +"<br>Percentage:"+perc)
+                break;
+                default:
+                    document.write("This student ID does not exist")
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: auto auto auto  ;
+        grid-template-rows: auto ;
+        grid-gap: 10px 20px;
+    }
+    .container ul{
+        display: flex;
+        list-style: none;
+        justify-content: center;
+    }
+    .container li{
+        margin: 0 10px;
+    }
+    .items{
+        border: 2px solid green;
+    }
+    .container1{
+        border: 2px solid red;
+        display: grid;
+        grid-template-columns: auto auto auto auto auto  ;
+        grid-template-rows: auto auto ;
+        /* grid-gap: 10px 20px; */
+    }
+
+    .item2{
+        grid-column: 2/4;
+        grid-row: 1/2;
+    }
+    .item5{
+        grid-column: 1/ span 5;
+    }
+
+    .products{
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        border: 2px solid black;
+        background-color: black;
+        background:  url(wave.svg);
+
+    }
+    .p-items{
+        
+        border: 2px solid green;
+    }
+</style>
+<body>
+
+    <div class="container">
+        <div class="items">
+            <h1>Logo</h1>
+           
+        </div>
+        <div class="items">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="items">
+            <input type="search">
+        </div>
+       
+    </div>
+
+    <div class="container1">
+         <div class="items">1</div>
+         <div class="items item2">2</div>
+         <div class="items">3</div>
+         <div class="items">4</div>
+         <div class="items item5">5</div>
+    </div>
+
+    <div class="products">
+        <div class="p-items">
+            <h1>Product 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero?</p>
+            <img src="car.jfif" alt="" width="100%" height="200px">
+        </div>
+        <div class="p-items">
+            <h1>Product 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero?</p>
+            <img src="car.jfif" alt="" width="100%" height="200px">
+        </div>
+        <div class="p-items">
+            <h1>Product 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero?</p>
+            <img src="car.jfif" alt="" width="100%" height="200px">
+        </div>
+        <div class="p-items">
+            <h1>Product 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, vero?</p>
+            <img src="car.jfif" alt="" width="100%" height="200px">
+        </div>
+        
+    </div>
+    
+</body>
+</html>

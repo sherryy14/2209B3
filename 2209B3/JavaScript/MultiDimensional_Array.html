@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+  
+    <script>
+        var emp_info = [
+            ['Emp01', "Saad", "$1000", "IT","KHI"],
+            ['Emp02', "Faaz", "$1200", "Network","LHR"],
+            ['Emp03', "Maad", "$5000", "Full Stack Developer","ISL"]
+        ]
+        // console.log()
+        // console.log(emp_info[0])
+        // document.write(emp_info[2][3])
+        document.write("<table border=1>")
+
+        for (var i = 0; i < emp_info.length; i++) {
+            document.write("<tr>")
+            for (var j = 0; j < emp_info[0].length; j++) {
+                document.write("<td>" + emp_info[i][j] + "</td>")
+            }
+            document.write("</tr>")
+        }
+
+        document.write("</table>")
+    </script>
+
+</body>
+
+</html>

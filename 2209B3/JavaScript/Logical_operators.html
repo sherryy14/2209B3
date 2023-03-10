@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a =6;
+        var b =7;
+        var c =8;
+        var d =10;
+
+        // AND Operator x
+                     // 1  x  1 = 1
+        document.write(a<=b && b<=c )
+
+        // OR Operator +
+                //      1 + 0 = 1
+        document.write(c>a || b==c )
+
+        document.write("<br>")
+        //      1 x 0 + 0 = 0
+        document.write(d>a && c<=b || b>=d )
+        document.write("<br>")
+        //      1   x   0   +   0   x   1   x  0   +   0  = 0 
+        document.write(d>a && c<=b || b>=d && d==d && a>b || d<a )
+         
+        document.write("<br>")
+
+        var binary = d>a && c<=b || b>=d && d==d && a>b || d<a
+        console.log(!binary)
+
+        document.write("<br>")
+        document.write(!(a>b))
+    </script>
+</body>
+</html>

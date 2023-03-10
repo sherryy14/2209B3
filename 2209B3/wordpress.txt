@@ -1,0 +1,8 @@
+Wordpress:
+Username: admin1
+password: admin123
+
+Xamp db:
+table name: mydatabase
+username: admin1
+password: admin123

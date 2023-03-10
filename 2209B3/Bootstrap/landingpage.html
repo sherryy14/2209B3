@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="36" height="16" fill="yellow" class="bi bi-android2" viewBox="0 0 16 16">
+                    <path d="m10.213 1.471.691-1.26c.046-.083.03-.147-.048-.192-.085-.038-.15-.019-.195.058l-.7 1.27A4.832 4.832 0 0 0 8.005.941c-.688 0-1.34.135-1.956.404l-.7-1.27C5.303 0 5.239-.018 5.154.02c-.078.046-.094.11-.049.193l.691 1.259a4.25 4.25 0 0 0-1.673 1.476A3.697 3.697 0 0 0 3.5 5.02h9c0-.75-.208-1.44-.623-2.072a4.266 4.266 0 0 0-1.664-1.476ZM6.22 3.303a.367.367 0 0 1-.267.11.35.35 0 0 1-.263-.11.366.366 0 0 1-.107-.264.37.37 0 0 1 .107-.265.351.351 0 0 1 .263-.11c.103 0 .193.037.267.11a.36.36 0 0 1 .112.265.36.36 0 0 1-.112.264Zm4.101 0a.351.351 0 0 1-.262.11.366.366 0 0 1-.268-.11.358.358 0 0 1-.112-.264c0-.103.037-.191.112-.265a.367.367 0 0 1 .268-.11c.104 0 .19.037.262.11a.367.367 0 0 1 .107.265c0 .102-.035.19-.107.264ZM3.5 11.77c0 .294.104.544.311.75.208.204.46.307.76.307h.758l.01 2.182c0 .276.097.51.292.703a.961.961 0 0 0 .7.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h1.343v2.182c0 .276.097.51.292.703a.972.972 0 0 0 .71.288.973.973 0 0 0 .71-.288.95.95 0 0 0 .292-.703v-2.182h.76c.291 0 .54-.103.749-.308.207-.205.311-.455.311-.75V5.365h-9v6.404Zm10.495-6.587a.983.983 0 0 0-.702.278.91.91 0 0 0-.293.685v4.063c0 .271.098.501.293.69a.97.97 0 0 0 .702.284c.28 0 .517-.095.712-.284a.924.924 0 0 0 .293-.69V6.146a.91.91 0 0 0-.293-.685.995.995 0 0 0-.712-.278Zm-12.702.283a.985.985 0 0 1 .712-.283c.273 0 .507.094.702.283a.913.913 0 0 1 .293.68v4.063a.932.932 0 0 1-.288.69.97.97 0 0 1-.707.284.986.986 0 0 1-.712-.284.924.924 0 0 1-.293-.69V6.146c0-.264.098-.491.293-.68Z"/>
+                  </svg> -->
+                <img src="../car.jpg" alt="" width="20px" height="20px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav me-5 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-details" class="nav-link text-light">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider  -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://bd.gaadicdn.com/processedimages/hero-motocorp/hero-motocorp-splendor/640X309/hero-motocorp-splendor628c6c03932f2.jpg"
+                    class="d-block w-100" alt="..." height="400px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://bd.gaadicdn.com/processedimages/hero-motocorp/hero-motocorp-splendor/640X309/hero-motocorp-splendor62863b5bef195.jpg"
+                    class="d-block w-100" alt="..." height="400px">
+            </div>
+            <div class="carousel-item">
+                <img src="https://bd.gaadicdn.com/processedimages/hero-motocorp/hero-motocorp-splendor/494X300/hero-motocorp-splendor632195611b57c.jpg?imwidth=380&impolicy=resize"
+                    class="d-block w-100" alt="..." height="400px">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About  -->
+
+    <div class="container">
+        <h1 class="text-center my-5">About Us</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="border border-dark rounded"
+                    src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVFRUYGBgYGBoYGhwZGh4ZGBgaGBgaGhwYGhwcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QGhESHjQkISs0NDQxNTQ1NDQ0NDE0NDQxNDE0NDE0NDQxNDExPzQ9NDExNTQ0NDQ0NDU/NDE/NDQ0Mf/AABEIAMIBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAgMEBQYBBwj/xAA/EAACAQIEBAQEBAQDBwUAAAABAgADEQQSITEFQVFhBiJxgRMykaFCscHwFFJi0QeC4RUjQ1NyovEWM4Oy4v/EABkBAQEBAQEBAAAAAAAAAAAAAAABAgMFBP/EACMRAQEAAgEEAgIDAAAAAAAAAAABAhEDEiExQQRRseEiYZH/2gAMAwEAAhEDEQA/APGYQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIQhAIXhCAXheEIBeEIQCEIQCEIQOiEmcNwTVqgpJ8zXt7Ak9zoDLscIpKcgBqMNCScq39Br94k274cFyxudsknuszactPReGeFPiEKEGv9N/ubmXHh3wVhqgqGpTuEbLa5Bvc7nce0583LOHHqyZxwxzusbvTyKcnqnH/APDamQWwjFWH4HN1Po24Prf2nmuNwj0nKVEKMDYhhY/+O+xmeHnw5Z/GpnxZYeUWEITs5iEWiEmwBJOwGpM03C/BVeqMzDIOm7f2EslvhLlJ5ZaOJSZtACfQXnoNDwotHU0w5HN/N9tppOFcffD2X4agDoLTXSxeT6eNVKZG4I9RaNz6b4X4kw9YZairr/MAR9xJmJ8JcPxAu2GoNfmqBW+qWMlmmplt8sQnr/8AiJ4R4VgqeYNVSq9/h00fNm/qYMCVQdfYTy9aNE/jZfXX8lmWkCEv/wD0xWYBlUgEX85CntpuPe0rMZw6rS+emy99x9RpCbQ4QhCiEIQCEIQCEIQCEIQCEIQCEIQCEIQH8NiGpsrqSrKQVI3BBuDNXw3xDTNYu6hRV+cW0Sp/zEPJWJJK8rnoJjoQ1Mr03H09z4Fxr4T5WVT6jl2ImmOEuWxGFswbWpSOhvvdT13ng/BsdVICJUBZflR9CR0Rjuf6dO15quE+M62Hbzo6kbkai3Q7i3vJyYY8mPTk54W8eXVi2uOrZnDLXemqg/ESy/ETazZWBuBre3W/K0j+IvDVPG0QCwzgXp1VH2YX1B5iMr44wOKA/iKYzfzjRh7j+8k4fEYdRmwuJ7lKnmU+42Peebn8Lk47MuK71/v7fdj8rDOdOcs/DyjFeCMdTNjQZrEgFCGBtzABvb2lPW4dUpvkqIyNzDCxA9J79g+MI482jDQjcjvpuO88s8Z0cmJqMfMHbMD2PL6EfUTt8b5GeefTnJGObhmOPVi0X+HPhdHu5W9uZ5z1ijwxFFgonjngv/EFMKop1ELLfUjcdxPTeHePsBWAtVyE8nFvyno2/T4JjLd5JmN4UrDYTK8T4OBfSbWpxfDZC5xFIIouWLqAB3udJjOJeLab3+BTaoLkZ2IRNDbQ6k/QSXkmM3kThyyuse7OVsKUOmknYDxM2G+dwF/qNvzldWxNSqTr7Ulvb1c7fWUHGLLdWalTvZiSoqVjuNTyH+szOWZXtOzpeG4zvZv69o/jniuHxeIatTzFmCAsS2W65g2jcrZLAWAsesqcKlSmqt8JStSoApYLmJVgbKd1GgvsNZMqYtFVWIVgilEOQBrm+pK2Dbn5s+52kCo+ZASxKJZQuY6OwJzhTpY7f5Yu99lnh6picHcm0gvQHyut1OktPC7/ABcLRc75FVueqeQ//W/vLKtw/MNp08uPivMuPeDdPiUNjy/D/wDmYqtRZCVYEEcjPdP4dqZOl1O4O1pnPEvhxKozKN9VPMHp39OcxcXTHL7eVQkrHYFqLZWHoeRkWZbEIQgEIQgEIQgEIQgEIQgEIQgEIARfwm6H6QEAy/4X4gdLBvPbro4HZufveUOU9IKbawPScFj8HibCoiB/61Ct7OLH7yTU8KUjrTZ0PZsw/wC+/wCcwy0VdAyHXZlO4PY9DJOC4zXo6I5AH4W1H0MDS1uB4lPkqBx0e6n9RKTjFepkKVaLqRqGtcX2vmHLlOVfFWKb/i5f+lVB+tryravXxLhAz1WJNrsWt1PmNlHU7CS4y3ftqZ5SdO+yCyN0krAhry74v4afBpSL1F/31JnGtvMGtkXnqGuCbXsZU4ep5djmXQ+vvvNbYWtJHYZVza9OXf1lpw/A1ktpcXzefz6nnY6H3lfwnxGKZC1aZy/zLrb1Xn7T1fwdVw1YBgyv06eluXpLqXyzblj4Y6rVx9YBCCiDkigMR0BVbCP4fgKW1wzK38zgux/ztrPZERQNAB6CQOK2C3llZyl08U8U8FJoMcuqeYe2/wBrzz9DfQjW97/S09r43Wz5l5HSeNY3CGnVenzVtBqSRuLddLSZfa8d9PSf8MeLIKL06jgFapKk6AhwDz7gn3npuGRXFwQR1BuJ894VzSQDXMdSO55ewAkzBeIq1I3R2T0Yj/zLL2Lju7e91uHBhtKbF8INittDt2MxPDP8VK6aVAlUf1DK31X+01eA/wAT8DUsKqvSPW2dfquv2jadLL8c4EtdSpFn5HuP1nlmOwbUnZHFip+o6ie88V4zgHOeniaWutmbIdezAGee+Omw1WnnSqjVEIACMGLAmxvblzv2ks9t42+K8/hCEy0IQhAIQhAIQhAIQhAJIp4YneGGTmfaPPU72EDq0bR1aRO28jCoOtpLoYja+veAirRI3EjNRB20M0FSzJm3K725r/pIJwobVCD2vZvvBtW4asabXOx0I6j+8vCiuAd77GV1XD28rAg9CLH6GLwLlTlPynbsenvAbx9EhlVASW0HUkmwAnoHDOHJw2h8R7FyAXa1wDfyoOutrLpc6nS1sVjaWYBhfMpuMu/t7gSxxvHKmIprSdFVmIYs5KKQNTe+huVGthbQCShXiPjhxZprTVr6uQ1rXUEkgm2trk+gteKwy0qTKHtqNdL2vuTeUP6bTXYWnQfA4h2W9fOmR98vJka2ykG99idOQuFJ4gdGb/dqFA3tse4EquG8Vq4aoHosVPMfhb1EcxLjKBfzDSx3009+UrmOx7ywr6E8DePKWMXI5yVlGqk72/Ep5iXfGmzAnNpbQT598LgrVzbM1Nyjb5SCfNptqp3/AFnodPxCyIv8RvlALLe2YAXABAJ5nQcj0mplNsZS67J+JoTB+MMDldK6g/yPbQnmvbXUfSa1eO0Kg8tVD7yPiaSVVKP5kbQ2Pe4IPIggH2mspuaYx7V5vWq2tfVje+Uhrdr84kVlZcjXBBv2YnS5HJrWF+nTcv8AHlp06jU6XxMqHKRUyg5gTexTcbWMrEIY8l066X6m85Tft2WFNqPO0cOIoL8p37XkGrhSRcC5HTmP7yJkMot6uOoFLFKhcaAghVAvcgjUnn0kUYumP+GT6tpr7SAVIiZNBTkXNhYX26domEJQQhCAQhCAQhCATqrcgdZyPYceb0vAkVPKJEZv30j9c6gfvTWSeE8PFVmZ2yoguzfoPoYFeB+ccpk79N/SaKj/AATqy5CuUEhiSC3Ly6m52sD15a2qDhlvdQwHLMfMfW2ggScDico127xLV0BOUDfTc/lILU+4+sWgC8/pAsU4q4Fsiun8roXUXFri5up13WxkdkYrfS3br07HsYqjUvOvcaj3HJh0P94HMO1ZzkRC57C5+0uqnB8RVOesyI1gDmYk20A8o1UaDSROEeH8RWYvTzU1ZQVZr+YMbaZd1uDr1E9CwvgwfCviKmVFsGRHfK7X+ZkBW5P000k1b4NyMk/h2mlJqlSqwVbDMPIhZ7lUAZCzMQpNgNhckDWV3C8clK5zB0PlcZSDl5Na+o11XsCNRPQeOcApth2wHxUpOKhrUyylQCVyZKgFyqkKLProNec8s4jwfE4R8lSmwLAlSPMjqCCWVhcMNBqIVN4vw8HVCGuLqf5hva/M2sQeYsRvKGmo3a9r+/tLbheMsmR7lPw9V1vp01JI6EnkTJ2P4SHpfHpksyH/AHq22DNZKyAfgYnKw3Vxrows/oR/DeMRMQrW8trDMba3BAvsNjy3tNrxvFqWRAwcg3Z082Rh5kY20OoXS/MzF8P4WPmq7fy9f+rt2lq/FUQZUtp7AekaRV8YwDs5dEZrkliAQpvrmsZUph66nyB110sSP1l9V4rm3fTpsJDxePspy7nT0HM/p7yipZs+Z6jkuLCzXZmygAeYnkAB6CBBVjkBFhoRfW9h+RMaZv3y+gj+GxGUGwBIB35jQke2p+sBKVXU6H/WWPD2QtndQRezKdmBvr2Om8RQqKQGqAEDkulry9TiGA+EVKMLFWIAszWNrX9GY+wlFXjcCjm9NCq9CbyuqcIcagSceJoPlzkekWvGl/lY+0goauHZfmUj8ozNZ/tOg3zq6/5L/rKjiKYc602ObpkIB9jsfSBVQhCAQhCAQhCAR7DjU+n6iNR3DnzexgKrb+xlphcaFw5pr87s2e4PykW0PXT85WVBqPp9RJfDcIagYAi6i9uo7fvmIDIYL0LdeQ9I27k7mcYggG+97/paSxStRZm3ZgFGw05gD/NAhFxFKt+YHrpG/hkbxypz9bwJNKoqqwuMxtYg7WIJ7EkXGvWWWDdHJLkWyWsmVbGxUMdLXuATYa3O24psNWtoTpyvJuLwwBsSoewawIa1wG1y35H1Bger+HgKaIiLcKBm5G3TXnNLxDEK63UFF2FyMxIPzActQP3aYThXG1tmcXRgCjDW9jY9Lag/TWFDiqGo7hshNgob5CFva7Xup1PbbUcoJXEOHYXFYtKWFxNbO+YVne9vLqGJOXMwbS3Ui0Y8UeH8Rh6aiswrUzc5kNmVgNTlvZ9NmFm5eucaoKTDFKxuHLAEXHmJuRbpf7x7jnig4ikEdRoyuDbXy9Adr9ekXuRn8Thbm6OD27ddr/XXuY5/F5Ba+ZtdtAL2vt6D6SLUxBOg0H73kcyh6tiWfc+3KMzk7AALm0RVbXTbl6Rd7D1kdzAQ0FOotOGLAtAlBdLcjt6cpGQ6/aWdbCGmqMTcOMymxGmmmvMEkH0la+jfeIEU3IlhhsWRuA35xS8Id1LopdVVbhBmNyoNrDYbgntI9OmqPZrMbMCP6mUj6gkH2garhHE1uMwBXnpqJssT4YpYmiXpIri12QfMO6nkZ5VhyQbjl+7GbnwT4mbD1FzE5GNiD+Uu0YLjXCjh3y6lTfKSLH/pYcmHOVlp7p/iFwWlWQVUtkqC5I/C/Jh++s8UxGHZHZGFmU2P9x25wItoRwrOWkUiEVaEDoWLVbG8UEigkB10uNPadpM1PLWQ6g2YdD0I6HX6ek4mhH71na1wTpo245QLBMdQLZ/hlXIJ0+U6G53t15RjiNXOOgHygfveVmvLv66i20dpubi4NgbgdIC6VwNvQ/oY1Uj7NYX9bepkYtaBz4TdPyjgRr5uf703iqL305yc3D3HK5Avbnb8vvAtKPiEKq0Uw6/AUbMfOXPzVc42Y/y6jbewtDxnEiylVAW+hN8zW6DQW+krYCAtXsALk2nDOWigICbQIijEF+Q3/KBzc9h9z0nbwtAiAh2jLGSP4ZzrYKOrMFH/AHEQ/g7as4t/SC33IC/eBHQXMfw1E1KiIoBLOqgG9tTztrbr6RCKBexJHU6H7E/nNf4UwlJEbEOyswVjexugHzWB9xmGov0ktImeMMSoSnRIBa+YPrsqgW15nMND685h8QussuN8Res18xZFJKX0ALHUgdLAfTtIFY5lzae237/tEWrHg3Ga2Hu1OzLlzMrC4OV7XuNRoRNRhkw3EgKiAUsQhVj1uCPmt8yaWzbjT0Pn63Gv4T5T062P0v7S64HWbDVkqFQoYFQWuVIzKGHVSLd7dJdIaq0jSd0cZWV8rKd7i/2tY32It1iqddc11a4Pl+mo/XWX/jjDLURMUhuLBHK/iQ6q1+3mHuo5TKUaflJBuVFyPflA3/BePM1BsO5uN17ETM+JcIGRK6jn8J/UAspPsGHsJFwVfKwa9r6y5pDPRxFM80+IvqhD/kCPeaRjTTiTTk804gpMqhfDhJeSdgMARax0U53JAaIvoYLVy6NqIODGmPWA6UQ87fvvAsi/1H7SOROEQB3JNzEbxRWdAgKRRLDBcVqUgyjI6sLFXUOLduY+srbzoeA9VqXN8oHYXt9zHqGNRfmohv8AMR+hkXNO6dIFr/tLDlbfBZD1V1f7OtpHZ6bbVKq//Gn5q4leUE5kPIwJn8On/Mdv8gH3LmKyKBZRYetyfUyDmYRa1zAk5YkrELiIr4oMB0Dpz10++xB39YiqSdAPMxAHUk6DofziqLjY7fvW3OW/DOEsrrUcDIFzIQQVcnS4t013APaYzzmMtqaVXEMMEYqOQUepyi59zczvBkZ6i0S7Kj322zKpYaeoEk8XsWPUafmf1lfhcSabo1vkfN3I0uPoPvHHbcZtT2MwYR2Vr3BIupsp7i6x/hmE+IxVTbQt5tb2IHL1BJ6AmWniHBj4gqDVKiAr0vz+osfeVWBwodyhOW21hvea2ClVTOuREGXKAXJykgMDUYA8wQba6qN9QYjVWKhSxKggAHlqBp7AD2HSP4nDixREJdSczC50AvtsABe57RvD0ChIYrqptc818wv2uoHvKNHhFLcNqo2mUsR6KyuPzlVVwgJKkWK3Fx2/SXGcpgGLjzVCRYc87WFrdhfSURxFSwJWxtYltL2Fibb3Nr+8imqL+US74JX85B1BRlPoQQRKJRZV+sseEMQ+t7WJ26AzTNI+BOfB9ZNsOpiBT7TKovwOxhJuTsIQK0JFinHlQRxU7SiN8IdJw4UdJNCdp3LIK1sEIy+C6S5CTvwxAz7YUxDUWHKaA0og0BKrPFD0iSO00TYQRpsCDyhFDC8um4aIy/C4FWGnRUk5uHNG24e/SAwKkVnB5QbCsORiDTbpAWFQ8ooUF6kRnKZ0MYD4w3R/tLHA4qsgKBxkJvlIuA3UX+UyrWqY6mIksl8ibiEzAncjX16yGtEOrAfMBmHdRv7jf0DR5MQOsbY5WBU21uD0PSUXvAMUlRBhqptf/wBtuYYbL69Ouo5at43g9akbhcxIJzIGIUKTqb2tpr2lBiUubroeY5e0uuEeL61IBaiiqg08xIcDoWsb+495FQOGKHYqSApDG5uSzaX1257S+4JwYM+ezgLYhxYAsGBAGmugMl0+N4V7MuHS4Nx5EFie9vvaN1+ONVU5bIuxAOvoT/aLQ3xrFfHcqjDLRPP5XdhrrysNAe53EqOJYoMMo0bQEW1Hr/pELjVQvlGZi1xb5QAALk+0impu7G5O3c9fpAbqmx05C0ncKuST2t9ZWO00nC8HlQE7nWXaAJA05M+HEmnIqLl/d4SX8PtCBUj1ilY9Z28LQhQJi1jYi4DgeAiRFoYUpQJ3SdyztoU3lihTB5xdp0LAbNO3SLQdo6s7ARkH/mBpjpHYoLAjmgDEtgl6CS7QtJsV7cOXpGH4UsuAkUEjZpnX4T0kWpwxuk1op35TvwQY2aYZ8M68o2WOxm5fBKeUjPwhD+GXaaZJHvoY6MOD3Hbf9+svK/hvN8rW+8gVeBYhPlAcdjYy7NIr4Vfwsw9VN/qsbGFvyLet7fcmOVHqpo6Ovqtx9bSM+NJ5n8oRJKBPmt2UfrI9Wrc3Pt2jQe/T3ltw3CpcFjmPQ/KPbnAXwfhhcio48o1UH8Xf0mkQGcpOSI+FkaNhO0DSvHUEWUgMfD7CEfyQhGZEUDEog6x3IBCEj0ixAH1MUUHWFdCTmX0gqkbfnHACd7QBFHMfeOlOkQgEczd4AFvFZJ1Yq0K4FiwpgBFLA4ojgE5eLQXgCpF/DikUR1VEBj4cUqR60XkPKAwqRz4cfC9otVgRRTihTknIIqwAgMIljvFlIW1iwkBp6fW3pIeI4dSb5qan21lqF7RtkgUNTwzQbZMvoZ2n4aprsTNAKekEQXk2aV1PABRoY6lCWQpWgAP2JRCFC8UKIktkHIRaJAg/C7Tsm5e8IHnqRUIQyVFJCEB5J1t4QgEVCEKcTePQhABFJCEKdO86J2EAWSEhCA4ItYQgK6TqzsIHRFQhAQsUIQgL5wXeEID/ACiGhCAobTqwhAG5R1NoQgMwhCB//9k="
+                    alt="">
+            </div>
+            <div class="col-lg-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea accusantium voluptas recusandae ut
+                    ratione reprehenderit tenetur deserunt quasi, harum incidunt pariatur saepe nesciunt, quos
+                    distinctio tempora? Consequuntur corrupti asperiores repudiandae? Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Temporibus excepturi inventore fuga quibusdam illum, a ab eos ipsa
+                    dolorem. Eum reprehenderit repellat ab, nobis assumenda id ad odit debitis qui quas rem blanditiis
+                    eveniet ipsam veniam odio accusantium nemo corrupti officiis cupiditate! Laudantium incidunt
+                    perspiciatis explicabo? Eius tempore itaque perferendis molestias voluptas commodi nobis animi amet
+                    natus officiis nam recusandae autem enim, doloremque ipsa incidunt eos dignissimos optio similique
+                    iste deserunt? Dolor cum consequatur eveniet laborum ratione excepturi explicabo veritatis neque
+                    molestias, ex tempore quidem hic labore quae velit. Dicta odio ipsa libero corrupti ipsum officia
+                    dignissimos commodi sit totam!</p>
+            </div>
+        </div>
+    </div>
+    <!-- Products -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center my-3">
+                <div class="card" style="width: 18rem;" data-aos="fade-right">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="index.html" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center my-3">
+                <div class="card" style="width: 18rem;" data-aos="fade-up">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center my-3">
+                <div class="card" style="width: 18rem;" data-aos="fade-left">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center my-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                <h1>Bootstrap</h1>
+            </div>
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                <h1>Bootstrap</h1>
+            </div>
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                <h1>Bootstrap</h1>
+            </div>
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                <h1>Bootstrap</h1>
+            </div>
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                <h1>Bootstrap</h1>
+            </div>
+            <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 ">
+                <h1>Bootstrap</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table table-dark table-hover table-striped-columns">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>34</td>
+                <td>BSCS</td>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>34</td>
+                <td>BSCS</td>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>34</td>
+                <td>BSCS</td>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>34</td>
+                <td>BSCS</td>
+            </tr>
+            <tr>
+                <td>Hasan</td>
+                <td>34</td>
+                <td>BSCS</td>
+            </tr>
+        </table>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/79e245ae-ac85-434d-bffb-0be2f73820cf/giannis-immortality-basketball-shoes-p9QlJF.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <h5 class="card-title text-center">Nike</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" title="Add to cart">
+                            Add To Cart
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Nike</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/79e245ae-ac85-434d-bffb-0be2f73820cf/giannis-immortality-basketball-shoes-p9QlJF.png"
+                                                        alt="" class="w-100">
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <h3>Nike Shoe & Sneaker</h3>
+                                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                                        Voluptas, numquam?</p>
+                                                    <input type="number" name="" id="" min="0" class="w-25">
+                                                    <p>$ <span id="price">99</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary" id="liveAlertBtn">Buy Now</button>
+                                        <div id="liveAlertPlaceholder"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                    type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Nike</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+                    type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Adidas</button>
+            </li>
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum fugit quo porro ex assumenda, beatae
+                    esse inventore error necessitatibus corrupti eum quae nihil doloribus dolorem laboriosam quod
+                    suscipit distinctio non!</p>
+            </div>
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                ...</div>
+            <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                ...</div>
+
+        </div>
+
+        <div class="container" id="contact-details">
+            <div class="input-group">
+                <span class="input-group-text">First and last name</span>
+                <input type="text" aria-label="First name" class="form-control">
+                <input type="text" aria-label="Last name" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword">
+                </div>
+            </div>
+            <label for="exampleDataList" class="form-label">elect your city</label>
+            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+            <datalist id="datalistOptions">
+                <option value="San Francisco">
+                <option value="New York">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+            </datalist>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Female
+                </label>
+            </div>
+
+        </div>
+
+
+        <script>
+            const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+
+            const alert = (message, type) => {
+                const wrapper = document.createElement('div')
+                wrapper.innerHTML = [
+                    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                    `   <div>${message}</div>`,
+                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                    '</div>'
+                ].join('')
+
+                alertPlaceholder.append(wrapper)
+            }
+
+            const alertTrigger = document.getElementById('liveAlertBtn')
+            if (alertTrigger) {
+                alertTrigger.addEventListener('click', () => {
+                    alert('Congrats! Your order has been placed', 'success')
+                })
+            }
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+
+            AOS.init();
+
+            // You can also pass an optional settings object
+            // below listed default settings
+            AOS.init({
+                // Global settings:
+                disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+                startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+                initClassName: 'aos-init', // class applied after initialization
+                animatedClassName: 'aos-animate', // class applied on animation
+                useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+                disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+                debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+                throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 400, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+            });
+        </script>
+</body>
+
+</html>
+
+

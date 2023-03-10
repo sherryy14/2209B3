@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #para{
+        background-color: brown;
+    }
+    #marks{
+        background: #000;
+        color: #fff;
+        font-size: 50px;
+    }
+    #percentage{
+        background-color: cadetblue;
+        font-size: 50px;
+    }
+</style>
+<body>
+        <h1 id="heading">DOM <u>js</u></h1>
+        <p id="para"></p>
+        <div class="content">This is first div</div>
+        <div class="content">This is second div</div>
+
+        <div id="marks"></div>
+        <div id="percentage"></div>
+    <script>
+        var gettext = document.getElementById('heading').innerText;
+        console.log(gettext)
+        var gethtml = document.getElementById('heading').innerHTML;
+        console.log(gethtml)
+
+        document.getElementById("para").innerText = "This is new paragraph"
+        var div = document.getElementsByClassName('content')[1].innerText;
+        console.log(div)
+
+        document.getElementsByTagName('div')[0]
+
+        var marks = 460
+        var percentage = marks /550*100
+
+        document.getElementById('marks').innerText = marks
+        document.getElementById('percentage').innerText = `${percentage} %`
+
+
+
+
+
+
+    </script>
+</body>
+</html>

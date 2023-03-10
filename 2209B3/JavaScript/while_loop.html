@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // While Loop 
+        var a = 5;
+        while(a<=10){
+            document.write(a+ "While Loop<br>")
+            a= a+2 // Terminating the loop
+        }
+        while(a==6){
+            document.write("True")
+        }
+
+        var age = 20;
+        document.write("<ul>")
+        while(age>=15){
+            document.write("<li><b>Do not study</b></li>")
+            age--;
+            if(age<25){
+                document.write("<i>Your age is "+age+"</i>")
+            }else{
+                document.write("Invalid Age")
+            }
+        }
+        document.write("</ul>")
+
+        // Do While Loop 
+        var b = 1;
+        do{
+            document.write("<br> Do While loop executed")
+
+            b++
+        }while(b<6)
+
+
+
+
+
+    </script>
+</body>
+</html>

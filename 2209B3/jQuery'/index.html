@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keyword" content="shoe, shoe for men,">
+    <meta name="description" content="Nike is one of the most selling brand for shoe">
+    <meta name="author" content="Shahryar">
+    <meta name="robots" content="ALL, FOLLOW, INDEX">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        width: 100%;
+        height: 200px;
+        background-color: cornsilk;
+        /* position: relative; */
+    }
+    h2{
+        position: relative;
+        left: -100%;
+        text-align: center;
+        text-shadow: -2px 3px 5px gray;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Animate</h2>
+    </div>
+    <button id="btnhide">Hide</button>
+    <button id="btnshow">Show</button>
+    <button id="btntoggle">Hide/Show</button>
+    <button id="fadeout">Fade Out</button>
+    <button id="stop">Stop</button>
+    <h1>jQuery Function</h1>
+    <script>
+        $(document).ready(function(){
+            $("#btnhide").click(function(){
+                $('h1').hide(5000)
+            })
+
+            $('#stop').click(function(){
+                $('h1').stop()
+            })
+
+            $('#btnshow').dblclick(function(){
+                $('h1').show(3000)
+            })
+
+            $('#btntoggle').mouseenter(function(){
+                $('h1').toggle('slow')
+            })
+
+            $('#fadeout').click(function(){
+                $('.container').fadeTo('slow',0.5)
+            })
+
+            $('.container').show(function(){
+                $('h2').animate({
+                    left:'0%',
+                    top:'50%'
+                },4000)
+            })
+            // $('.container').show(function(){
+            //     $(this).animate({ 
+            //         top: "100px",
+            //         opacity: '0.5',
+            //         width:"100%",
+            //         height:"300px"
+            //     })
+            // })
+        })
+    </script>
+</body>
+</html>

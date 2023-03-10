@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="username">Username</label> <br>
+    <input type="text" name="" id="username" placeholder="Sign Up Username"><br>
+    <label for="password">Password</label> <br>
+    <input type="password" name="" id="password" placeholder="Sign Up Password"> <br>
+    <label for="showpass">Show Password</label>
+    <input type="checkbox" name="" id="showpass"> <br>
+    <label for="email">Email Address</label> <br>
+    <input type="email" name="" id="email" placeholder="Sign Up Email"> <br> <br>
+    <button id="signupbtn">Sign Up</button>
+    <br> <br>
+    <label for="loginuser">Username</label>
+    <input type="text" name="" id="loginuser" placeholder="Login Username">
+    <label for="loginpass">Password</label>
+    <input type="password" name="" id="loginpass" placeholder="Login Password">
+    <label for="loginemail">Email Address</label>
+    <input type="email" name="" id="loginemail" placeholder="Login Email">
+    <button id="loginbtn">Login</button>
+
+    <script>
+        // Button for signup 
+        document.getElementById("signupbtn").addEventListener('click', () => {
+            // Getting value from user 
+            let userName = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let email = document.getElementById("email").value;
+            // Saving value in local storage 
+            localStorage.setItem("Username",userName)
+            localStorage.setItem("Password",password)
+            localStorage.setItem("Email",email)
+        })
+        // Button for login
+        document.getElementById("loginbtn").addEventListener('click', () => {
+            // getting value from local Storage 
+            let localUser = localStorage.getItem("Username")
+            let localPass = localStorage.getItem("Password")
+            let localEmail = localStorage.getItem("Email")
+
+            // Getting value from user 
+            let userName = document.getElementById("loginuser").value;
+            let password = document.getElementById("loginpass").value;
+            let email = document.getElementById("loginemail").value;
+            // Comparing stored value with user input value 
+            if(localUser == userName && localPass == password && localEmail == email){
+                alert("Successfully Login By "+userName)
+            }else{
+                alert("Failed To Login")
+            }
+        })
+
+        document.getElementById('showpass').addEventListener('click', ()=>{
+            let pass = document.getElementById("password")
+            if(pass.type == 'password'){
+                pass.type = 'text'
+            }else{
+                pass.type = 'password'
+
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>

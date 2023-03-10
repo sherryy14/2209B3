@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+
+        // -----------------------Text Strings --------------
+
+
+        // var strng = new String("Aptech Learning is a learning institute");
+
+        // document.write(strng.charAt(10));
+        // document.write("<br>")
+        // document.write(strng.concat(" Unleash Your Potential"))
+        // document.write("<br>")
+        // document.write(strng.indexOf("e"));
+        // document.write("<br>")
+        // document.write(strng.search("Learning"));
+        // document.write("<br/>")
+        // // document.write(strng.replace("Aptech","iPecht"));
+        // // document.write("<br/>")
+        // // document.write(strng.match(/learning/ig));
+        // // document.write("<br/>")
+        // document.write(strng.charCodeAt(1)); // Decimal code
+        // document.write("<br/>")
+        // document.write(String.fromCharCode(123)); 
+        // document.write("<br/>")
+        // document.write(strng.substring(1,5));
+        // document.write("<br/>")
+        // document.write(strng.toLowerCase())
+        // document.write("<br/>")
+        // document.write(strng.toUpperCase())
+        // document.write("<br/>")
+
+        // Math Object 
+
+        //     var a = 2;
+
+        //    var pwr = Math.pow(a,2)
+        //    document.write("<br>")
+        //    document.write("Square : " +pwr)
+        //    document.write("<br>")
+        //    var sqt = Math.sqrt(81)
+        //    document.write("Square Root : " +sqt)
+        //    document.write("<br>")
+        //    var ran = Math.random()
+        //    document.write("Random Number : " +ran*10)
+        //    document.write("<br>")
+        //    document.write("Floor : " + Math.floor(4.99999))
+        //    document.write("<br>")
+        //    document.write("Ceil : " + Math.ceil(10.1))
+        //    document.write("<br>")
+        //    document.write("Truncate : " + Math.trunc(4.9999))
+        //    document.write("<br>")
+        //    document.write("Round : " + Math.round(5.4))
+        //    document.write("<br>")
+        //    document.write("Absolute : " + Math.abs(-5.9))
+        //    document.write("<br>")
+        //    document.write("Sin : " + Math.sin(0))
+        //    document.write("<br>")
+        //    document.write("Cos : " + Math.cos(1))
+        //    document.write("<br>" )
+        //    document.write("Logarithm : " + Math.log(1)) 
+        //    document.write("<br>" )
+        //    document.write("<br>" )
+
+
+        //    Date Object 
+
+        var today = new Date()
+        document.write(today)
+        document.write("<br>")
+        document.write("Date : " + today.getDate())
+        document.write("<br>")
+        document.write("Day : " + today.getDay())
+        document.write("<br>")
+        var day = today.getDay()
+        var days_array = ["Sunday", "Monday", "Tuesday", "wednesday", "thursday", "Friday", "Saturday"]
+
+        document.write(days_array[day])
+        document.write("<br>")
+        document.write(today.getFullYear())
+        document.write("<br>")
+        document.write(today.getHours())
+        document.write("<br>")
+        document.write(today.getMilliseconds())
+        document.write("<br>")
+        var month = today.getMonth()
+        month++
+        document.write(`Months : ${month}`)
+        document.write("<br>")
+        document.write(today.getTime())
+
+
+
+
+    </script>
+</body>
+
+</html>

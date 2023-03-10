@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // Direct Method 
+        var car = {
+            // property  value 
+            company: "Honda",
+            model: "Civic X",
+            engine: "1.8 CC",
+            color: ["White", "Black", "Gray", "Red", "Purple", "Green"]
+        }
+        // Template literal 
+        document.write(`Compnay Name: ${car.company} <br> Model: ${car.model} <br> Engine: ${car.engine} <br> Color: ${car.color[0]}<br><br>`)
+
+        var apple = {
+            iPhone3g: {
+                model: "iPhone 3g",
+                year: "2000",
+                price: "$99"
+            },
+            iPhone3gs: {
+                model: "iPhone 3gs",
+                year: "2002",
+                price: "$109"
+            },
+            iPhone4: {
+                model: "iPhone 4",
+                year: "2003",
+                price: "$149"
+            },
+            iPhone4s: {
+                model: "iPhone 4s",
+                year: "2004",
+                price: "$150"
+            }
+        }
+        document.write(`Apple introduced ${apple.iPhone3g.model} year ${apple.iPhone3g.year} at very cheap price ${apple.iPhone3g.price}<br>`)
+
+        document.write(`Apple introduced ${apple.iPhone3gs.model} year ${apple.iPhone3gs.year} at very cheap price ${apple.iPhone3gs.price}<br>`)
+
+        document.write(`Apple introduced ${apple.iPhone4.model} year ${apple.iPhone4.year} at very cheap price ${apple.iPhone4.price}<br>`)
+
+        // var obj = new Object()
+        // obj.name = "Pen"
+        // obj.type = "Ink"
+
+        // document.write(obj.name)
+
+        // template Method 
+        function Programming(name, use, compatable) {
+            this.langName = name
+            this.langUse = use
+            this.compatable = compatable
+        }
+
+        var lang1 = new Programming("Python", "Data Science", "Web & Mobile App")
+        var lang2 = new Programming("JavaScript", "Dynamic Website", "Website & Web App")
+        var lang3 = new Programming("Java", "Mob Application", "Mobile App")
+
+        document.write(`<ul>
+                <li>${lang1.langName}</li>
+                <li>${lang2.langName}</li>
+                <li>${lang3.langName}</li>
+                </ul>`)
+    </script>
+</body>
+
+</html>

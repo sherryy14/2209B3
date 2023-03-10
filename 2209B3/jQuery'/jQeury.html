@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    ol{
+        border: 1px solid red;
+        height: 100px;
+    }
+    .active{
+        background-color: blue;
+        border: 1px solid red;
+        color: #fff;      
+    }
+</style>
+<body>
+    <div id="container">jQuery <b> HTML</b></div>
+    <div class="container">
+        <input type="text" id="txt" class="form-control w-25" placeholder="Enter your name">
+        <input type="text" id="txt1" class="form-control w-25" placeholder="Enter your email">
+        <input type="text" id="txt2" class="form-control w-25" placeholder="Enter your age">
+        <button id="btn" class="btn btn-outline-primary">Submit</button>
+    </div>
+    <button id="remove">Remove</button>
+    <button id="add">Add Class</button>
+
+    <div class="container1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque magnam velit quod itaque voluptate dolore dolorum, beatae, deserunt eos molestias nemo rerum sint tenetur mollitia asperiores natus! Perspiciatis, dolorum.</p>
+    </div>
+
+    <ol>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+        <li>HTML</li>
+    </ol>
+    <table class="table table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+    </table>
+
+    <script>
+        $('#add').click(function(){
+            $('.container1').toggleClass('active')
+        })
+
+        $('#remove').click(function(){
+            $('ol').empty()
+        })
+        
+        $('#btn').click(function(){
+            let name = $('#txt').val()
+            let email = $('#txt1').val()
+            let age = $('#txt2').val()
+            $('table').append(`<tr><td>${name}</td><td>${email}</td><td>${age}</td></tr>`)
+        })
+
+        // $('#btn').click(function(){
+        //     let a = $('#txt').val()
+        //     $('ol').prepend(`<li>${a}</li>`)
+                
+        // })
+       
+
+        // $('#btn').click(function(){
+        //    let con =  $('#container').html()
+        //    let txtvalue =  $('#txt').val()
+        //    console.log(con)
+        //    console.log(txtvalue)
+        // })
+
+        // JavaScript 
+         // document.getElementById('btn').addEventListener('click',()=>{
+        //     let cont = document.getElementById('container').innerHTML;
+        //     console.log(cont)
+        // })
+    </script>
+</body>
+</html>

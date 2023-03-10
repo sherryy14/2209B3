@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    input[type="text"] {
+        color: blue;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    fieldset{
+        border: 2px solid green;
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 20px;
+        background-color: aquamarine;
+      
+    }
+   
+    legend{
+        background-color: green;
+        color: white;
+        text-align: center;
+    }
+
+    .fname{
+        color: brown;
+    }
+
+    .passw{
+        color: brown;
+    }
+    input[type="text"]{
+        background-color: blue;
+    }
+
+    #fname{
+        background-color: chocolate;
+        border: 2px solid red;
+    }
+
+    #fname::placeholder{
+        color: darkblue;
+    }
+
+    #passw:focus{
+        background-color: blanchedalmond;
+        color: black;
+
+    }
+    .star{
+        color: red;
+    }
+    body{
+        background-color: black;
+    }
+    label{
+        color: white;
+    }
+ 
+</style>
+
+<body>
+    
+
+    <form action="">
+        <!-- Column name Username  -->
+        <label for="">First Name <span class="star">*</span></label>
+        <input type="text" name="" id="" placeholder="Enter your first name" autofocus required>
+
+        <label for="">Middle Name <span class="star">*</span></label>
+        <input type="text" name="" id="" required>
+        <label for="">Last Name</label>
+        <input type="text" name="" id=""> <br> <br>
+
+        <label for="uname">Username</label>
+        <input type="text" name="username" id="uname" placeholder="Enter username"> <br> <br>
+
+        <label for="pass">Password</label>
+        <input type="password" name="password" id="pass"> <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email"> <br> <br>
+
+        <label>Gender</label> <br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male">
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female"> <br> <br>
+
+        <label for="">Checkbox</label> <br>
+
+        <label for="">HTML</label>
+        <input type="checkbox" name="chk" id="">
+        <label for="">CSS</label>
+        <input type="checkbox" name="chk" id="">
+        <label for="">JS</label>
+        <input type="checkbox" name="chk" id=""> <br>
+
+        <label for="">URL</label>
+        <input type="url" name="" id=""> <br>
+        <label for="">Phone: </label>
+        <input type="tel" name="" id="" minlength="10" maxlength="11"> <br>
+
+        <label for="">Age</label>
+        <input type="number" name="" id="" min="0" max="15"> <br>
+
+        <label for="">Time</label>
+
+        <input type="time" name="" id="">
+
+        <label for="">Week</label>
+        <input type="week" name="" id="">
+
+        <label for="">Month</label>
+        <input type="month" name="" id="">
+
+        <label for="">Date Time</label>
+        <input type="datetime" name="" id=""> <br>
+
+        <label for="">Color</label>
+        <input type="color" name="" id=""> <br>
+
+        <label for="">Country</label>
+        <input type="text" name="" id="" list="country">
+        <datalist id="country">
+            <option value="PAK">
+            <option value="ENG">
+            <option value="IND">
+            <option value="NZ">
+        </datalist>
+
+
+        <br>
+        <br>
+
+        <select name="" id="">
+            <option>Select</option>
+            <option value="pak">Pakistan</option>
+            <option value="ind">India</option>
+            <option value="nz">Nz</option>
+            <option value="eng">Eng</option>
+        </select>
+        <br><br>
+
+        <textarea name="" id="" cols="40" rows="8" placeholder="Please leave a message"></textarea>
+
+        <fieldset>
+            <legend>Application</legend>
+            <label for="fname" class="fname">Full Name</label>
+            <input type="text" name="fullname" id="fname" placeholder="Enter your full name"> <br> <br>
+            <label for="passw" class="passw">Password</label>
+            <input type="password" name="" id="passw" placeholder="Enter your 8 digit password">
+        </fieldset>
+        <br><br>
+
+
+
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

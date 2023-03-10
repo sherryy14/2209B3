@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- External Styling Sheet -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<style>
+    /* Internal styling  */
+
+    /* 1em = 16px  */
+    /* h1{
+        color: darkgreen;
+        font-size: 2.5em;
+    } */
+    /* p{
+        color: aqua;
+        font-size: 2em;
+    } */
+    /* h2{
+        font-size: 30px;
+    } */
+
+    /* .google:link{
+        color: chartreuse;
+    }
+
+    .google:visited{
+        color: darkred;
+    } */
+
+    .google:hover{
+        color: deepskyblue;
+        text-decoration: none;
+      
+    }
+
+    .NewHeading:hover{
+        color: chartreuse;
+    }
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* div:first-child{
+        color: blue;
+    } */
+
+    p::first-letter{
+        color: blue;
+        font-size: 30px;
+    }
+   .container h1{
+    color: crimson;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    text-decoration: line-through;
+    background-color: aqua;
+   }
+   .container p{
+    /* text-align: center; */
+    text-indent: 30px;
+    text-transform: capitalize;
+    word-spacing: 10px;
+   }
+   .inline{
+    color: brown;
+   }
+
+   .container{
+    box-sizing: border-box;
+    width: 500px;
+    border: 2px solid red;
+    /* padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+    padding-right: 10px; */
+    /* padding: 10px 15px 10px 15px; */
+    padding: 10px 15px;
+    /* margin: 20px 10px 15px 10px; */
+    /* margin: 10px 20px; */
+
+    margin: 20px;
+
+    /* border-left-style: dashed;
+    border-top-style: solid;
+    border-bottom-style: double;
+    border-right-style: dotted;
+
+    border-top-color: red;
+    border-bottom-color: blue;
+    border-left-color: green;
+    border-right-color: yellow; */
+   }
+
+   ul + li{
+    color: blue;
+   }
+
+</style>
+<body>
+    <a href="formatting.html">Home</a>
+    <a href="index.html">About</a>
+    <a href="IntroCSS.html">Download</a>
+    <a href="index.html">Contact</a>
+    <!-- Header Styling  -->
+
+    <h1 class="NewHeading">Introduction To CSS3</h1>
+    <p class="NewHeading">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque hic placeat cum, voluptate repellat eum nihil dignissimos nisi accusantium quaerat.</p>
+
+    <h2 id="heading2">CSS Styling</h2>
+    <h1>Heading</h1>
+    <h2>Psuedo Class</h2>
+    <a class="google" href="https://www.google.com/search?q=aptech&rlz=1C1GCEU_enPK1012PK1012&oq=aptech&aqs=chrome.0.69i59j0i8i30j69i59j69i60j69i61j69i65j69i60l2.6147j0j7&sourceid=chrome&ie=UTF-8">Google</a>
+    
+    <div class="container">
+        <h1>Container</h1>
+        <p>Lorem ipsum dolor sit, amet <span class="inline">consectetur adipisicing</span> elit. Architecto, rerum! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque rem voluptas enim obcaecati non voluptatem odio impedit veritatis vel velit?</p>
+    </div>
+
+
+
+    <ul>
+        <li>First child</li>
+        <li>Second child</li>
+        <li>third child</li>
+        <li>Fourth child</li>
+    </ul>
+    <li>Outside 1</li>
+    <li>Outside 2 </li>
+    <li>Outside 3</li>
+</body>
+</html>

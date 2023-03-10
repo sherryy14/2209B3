@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var students = ["Ali","Saad","Dua","Sarim","Arfa","Zain","Zia","Osama","Ayesh"]
+        document.write("My name is: "+students[0]+"<br>My name is: "+students[1]+"<br><br>")
+        console.log(students)
+        document.write("<ul>")
+
+        for(var i = 0; i <students.length ;i++){
+            document.write("<li>Std ID: A"+i+"</li><li> My name is: "+students[i]+"</li>")
+        }
+
+        document.write("</ul>")
+
+        document.write("<table border=1><tr><td>Student ID</td><td>Student Name</td></tr>")
+            for(var i = 0; i <students.length ;i++){
+            document.write("<tr><td>A"+i+"</td><td>"+students[i]+"</td></tr>")
+        }
+        document.write("</table>")
+
+     
+        // Array Methods 
+
+        var employee = ["Ali","Saad","Dua","Sarim","Arfa"]
+
+        employee.push("Zain") // Push add item at last of the array
+        document.write(employee +"<br>")
+        employee.pop() // Pop removes item at last of the array
+        document.write(employee +"<br>")
+        employee.unshift("Ebad") // unshift add item at beginning of the array
+        document.write(employee +"<br>")
+        employee.shift() // shift removes item at beginning of the array
+        document.write(employee +"<br>")
+        var joinEmp = employee.join(" - ")
+        document.write(joinEmp +"<br>")
+
+        var newEmp = employee.slice(1,4)
+        document.write(newEmp +"<br>")
+
+        var arr1 = [23,56,33]
+        var arr2 = [67,45,38]
+        var arr3 = arr1.concat(arr2)
+        document.write(arr3)
+
+        var colors = new Array(5)
+        colors[0] = "gray"
+        colors[1] = "red"
+        colors[2] = "white"
+        colors[3] = "black"
+        colors[4] = "blue"
+        console.log(colors)
+    </script>
+</body>
+</html>

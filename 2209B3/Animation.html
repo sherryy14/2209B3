@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .animation{
+        width: 100px;
+        height: 100px;
+        background-color: brown;
+
+        animation-name: myanimation;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+        /* animation-delay: 2s; */
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes myanimation {
+        from{ 
+            background-color: brown;
+        }   
+        to{
+            background-color: blueviolet;
+        }     
+    }
+
+    .animation1{
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: relative;
+        /* border-radius: 50px; */
+
+        animation: abc 3s ease-in-out 1s infinite alternate-reverse;
+
+    }
+    
+    @keyframes abc {
+        0% {
+            background-color: blue;
+            top: 0;
+            left: 0;
+            border-radius: 10%;
+            
+        }
+        25%{
+            background-color: red;
+            top: 0;
+            left: 300px;
+            border-radius: 15%;
+        }
+        50%{
+            background-color: darkcyan;
+            top: 300px;
+            left: 300px;
+            border-radius: 20%;
+        }
+        75%{
+            background-color: brown;
+            top: 300px;
+            left: 0;
+            border-radius: 25%;
+        }
+        100%{
+            background-color: darkgoldenrod;
+            top: 0;
+            left: 0;
+            border-radius: 10%;
+        }
+        
+    }
+    .animation2{
+        margin-top: 10px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+
+        border-top-width:30px ;
+        border-bottom-width:30px ;
+        border-left-width:30px ;
+        border-right-width:30px ;
+        
+        border-bottom-style:solid ;
+        border-left-style:solid;
+        border-right-style:solid;
+        border-top-style:solid ;
+
+        border-top-color:red ;
+        border-left-color:blue ;
+        border-right-color:yellow ;
+        border-bottom-color:green ;
+       
+        border-radius: 50%;
+
+        animation: circle 3s ease infinite;
+
+    }
+    .animation3{
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+
+        border-top-width:5px ;
+        border-bottom-width:5px ;
+        border-left-width:5px ;
+        border-right-width:5px ;
+        
+        border-bottom-style:solid ;
+        border-left-style:solid ;
+        border-right-style:solid ;
+        border-top-style:solid ;
+
+        border-top-color:red ;
+        border-left-color:white ;
+        border-right-color:white ;
+        border-bottom-color:green ;
+        position: relative;
+        top: 33px;
+        left: 43px;
+       
+        border-radius: 50%;
+
+        animation: insidecircle 3s ease infinite;   
+
+    }
+    @keyframes circle {
+        from{ 
+            /* background-color: aqua; */
+            /* transform: scale(0); */
+            transform: rotateZ(0deg);
+        }   
+        to{
+           /* background-color: blueviolet; */
+            /* transform: scale(1); */
+            transform: rotateZ(360deg);
+        }     
+    }
+    @keyframes insidecircle {
+        from{ 
+            /* background-color: aqua; */
+            /* transform: scale(0); */
+            transform: rotateZ(360deg);
+        }   
+        to{
+           /* background-color: blueviolet; */
+            /* transform: scale(1); */
+            transform: rotateZ(-360deg);
+        }     
+    }
+
+
+</style>
+<body>
+    <div class="animation"></div>
+    <!-- <div class="animation1"></div> -->
+
+
+    <div class="animation2">
+        <div class="animation3"></div>
+    </div>
+</body>
+</html>

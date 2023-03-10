@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <img src="car1.jpg" alt="Maclaren" id="car-img" width="400px" height="300px"> <br>
+        <input type="text" value="Maclaren" id="car-name" readonly>
+        <button id="btn">Change</button>
+    </div>
+    <script>
+
+        document.getElementById("btn").addEventListener('click',()=>{
+            let carAlt = document.getElementById('car-img').alt;
+
+            if (carAlt == 'Maclaren') {
+                document.getElementById('car-img').src = 'car2.jpg';
+                document.getElementById('car-img').alt = 'Audi';
+                document.getElementById('car-name').value = 'Audi';
+            } else {
+                document.getElementById('car-img').src = 'car1.jpg';
+                document.getElementById('car-img').alt = 'Maclaren';
+                document.getElementById('car-name').value = 'Maclaren'
+            }
+        })
+
+
+
+
+        function functionName(){
+            document.write("Function")
+        }
+        functionName()
+
+        const car = () => {
+            document.write("Arrow Function")
+        }
+        car()
+
+        car()
+
+        car()
+
+    </script>
+</body>
+</html>

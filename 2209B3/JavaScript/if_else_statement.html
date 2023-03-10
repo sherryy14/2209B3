@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        if (a > 5) {
+            document.write("A is greater")
+        } else {
+            document.write("condition didnt match")
+        }
+
+        document.write("<br>")
+
+        // var age = parseInt(prompt("Enter your age"));
+        // if (age >= 18 && age <= 50) {
+        //     document.write("You are allowed to drive")
+        // } else {
+        //     document.write("You are not allowed to drive")
+        // }
+        // If else if (Multiple if else)
+
+        var math = parseInt(prompt("Enter your math marks"))
+        var phy = parseInt(prompt("Enter your physics marks"))
+        var chem = parseInt(prompt("Enter your chemistry marks"))
+        var bio = parseInt(prompt("Enter your biology marks"))
+        var comp = parseInt(prompt("Enter your computer marks"))
+    
+        var total = math + phy + chem + bio + comp
+        document.write("Your Obtained Marks: <b>"+total+"</b><br>")
+        var percentage = total / 500 *100
+        document.write("Your Percentage : <b>"+percentage + "%</b><br>")
+
+        
+        // Grade 
+        if(percentage >=80 && percentage <=100){
+            document.write("Your Grade: A Grade")
+        }else if(percentage >=70 && percentage <80){
+            document.write("Your Grade: B Grade")
+        }else if(percentage >=60 && percentage<70){
+            document.write("Your Grade: C Grade")
+        }else if(percentage >= 50 && percentage <60){
+            document.write("Your Grade: D Grade")
+        }else{
+            document.write("Your Grade: Fail")
+        }
+
+
+
+        
+/*
+---------------Decision Making Statements--------
+Q1. Write a JavaScript program that takes age as an input and check if age is greater than 18, you're qualified for driving if less than 18, you're not qualified for driving
+
+Q2. Write a JavaScript program that takes two input from user and check whether first number is greater, less or equal to the second number.
+*/
+
+
+
+
+    </script>
+</body>
+
+</html>
